@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FCE07F;
+    color: #050003;
+}
+
+header {
+    background-color: #496940;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 45px;
+    margin: 0 0 10px;
+    color: white;
+}
+
+header p {
+    font-size: 20px;
+    color: white;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.pesquisa {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #93842F;
+    border-radius: 10px;
+    background-color: white;
+    color: #050003;
+}
+
+input:focus {
+    outline: none;
+    border-color: #FFA739;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #FFA739;
+    color: #050003;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #93842F;
+}
+
+#mensagem {
+    text-align: center;
+    font-size: 18px;
+    margin: 30px;
+    color: #050003;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    max-width: 450px;
+    margin: auto;
+    border-top: 8px solid #496940;
+    box-shadow: 0 5px 15px rgba(5, 0, 3, 0.2);
+}
+
+.card img {
+    width: 180px;
+    height: 110px;
+    object-fit: contain;
+    display: block;
+    margin: 10px auto 20px;
+}
+
+.card h2 {
+    font-size: 28px;
+    color: #496940;
+    text-align: center;
+}
+
+.card p {
+    font-size: 17px;
+    color: #050003;
+}
+
+@media (max-width: 600px) {
+
+    .pesquisa {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 36px;
+    }
+}
