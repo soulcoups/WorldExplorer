@@ -12,7 +12,7 @@ async function buscarPais() {
 
     try {
 
-        mensagem.textContent = "🔎 Pesquisando...";
+        mensagem.textContent = " Pesquisando...";
         resultado.innerHTML = "";
 
         // Busca os países na API
@@ -48,17 +48,17 @@ async function buscarPais() {
                 <h2>${pais.name}</h2>
 
                 <p>
-                    <strong>🏛️ Capital:</strong>
+                    <strong> Capital:</strong>
                     ${pais.capital || "Não informada"}
                 </p>
 
                 <p>
-                    <strong>🌎 Região:</strong>
+                    <strong> Região:</strong>
                     ${pais.region || "Não informada"}
                 </p>
 
                 <p>
-                    <strong>👥 População:</strong>
+                    <strong> População:</strong>
                     ${pais.population.toLocaleString("pt-BR")}
                 </p>
 
@@ -73,6 +73,6 @@ async function buscarPais() {
 
         resultado.innerHTML = "";
 
-        mensagem.textContent = "❌ País não encontrado.";
+        mensagem.textContent = " País não encontrado.";
     }
 }
